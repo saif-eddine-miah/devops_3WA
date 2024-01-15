@@ -1,6 +1,6 @@
-require('dotenv').config();
-const Message = require('./src/message.js');
+const fizzBuzz = require('./src/fizzbuzz');
 
-let message = new Message(process.env.LANGUAGE);
+const number = 7;
+const result = fizzBuzz(number);
 
-console.log(message.get());
+console.log(`${result}`);
